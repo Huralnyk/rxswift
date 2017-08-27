@@ -1,8 +1,9 @@
 //: Please build the scheme 'RxSwiftPlayground' first
 import XCPlayground
+import RxSwift
 XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
 
-import RxSwift
+
 
 exampleOf(description: "just") {
     let observable = Observable.just("Hello, world!")
