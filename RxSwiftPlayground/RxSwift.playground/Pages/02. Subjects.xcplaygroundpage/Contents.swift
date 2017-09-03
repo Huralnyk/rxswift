@@ -1,8 +1,6 @@
 //: [Previous](@previous)
 
-import XCPlayground
 import RxSwift
-XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
 
 exampleOf(description: "PublishSubject") {
     
