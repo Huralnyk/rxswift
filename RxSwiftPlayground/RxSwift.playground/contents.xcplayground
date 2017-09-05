@@ -7,5 +7,6 @@
         <page name='04. Filter Sequences'/>
         <page name='05. Combine Sequences'/>
         <page name='06. Perform Side Effects'/>
+        <page name='07. Use Schedulers'/>
     </pages>
 </playground>
