@@ -15,6 +15,7 @@
 		5B1DD6981F5F288800579573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B1DD6961F5F288800579573 /* LaunchScreen.storyboard */; };
 		5B1DD6A11F5F292100579573 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1DD69F1F5F292100579573 /* TextView.swift */; };
 		5B1DD6A21F5F292100579573 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1DD6A01F5F292100579573 /* Button.swift */; };
+		5BF8E1881F6082BD0092797E /* DataElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8E1871F6082BD0092797E /* DataElementsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5B1DD6991F5F288800579573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B1DD69F1F5F292100579573 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		5B1DD6A01F5F292100579573 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		5BF8E1871F6082BD0092797E /* DataElementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElementsViewController.swift; sourceTree = "<group>"; };
 		B40AD46212DFF4841A2F075C /* Pods-BindUIElements.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BindUIElements.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BindUIElements/Pods-BindUIElements.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 			children = (
 				5B1DD68D1F5F288800579573 /* AppDelegate.swift */,
 				5B1DD68F1F5F288800579573 /* ViewController.swift */,
+				5BF8E1871F6082BD0092797E /* DataElementsViewController.swift */,
 				5B1DD6911F5F288800579573 /* Main.storyboard */,
 				5B1DD6941F5F288800579573 /* Assets.xcassets */,
 				5B1DD6961F5F288800579573 /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 				5B1DD6901F5F288800579573 /* ViewController.swift in Sources */,
 				5B1DD68E1F5F288800579573 /* AppDelegate.swift in Sources */,
 				5B1DD6A21F5F292100579573 /* Button.swift in Sources */,
+				5BF8E1881F6082BD0092797E /* DataElementsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
