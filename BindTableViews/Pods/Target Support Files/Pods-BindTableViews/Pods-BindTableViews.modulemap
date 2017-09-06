@@ -1,0 +1,6 @@
+framework module Pods_BindTableViews {
+  umbrella header "Pods-BindTableViews-umbrella.h"
+
+  export *
+  module * { export * }
+}
