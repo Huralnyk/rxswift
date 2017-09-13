@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R6u-DC-pya">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="o0E-J9-Hb3">
+            <objects>
+                <viewController id="kZe-ah-lvr" customClass="ViewController" customModule="BindCollectionViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzI-US-wkF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Naw-9P-Fgo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CyW-1i-B9X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-T7-UIf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eQQ-yy-iJX">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="bhm-g1-wMS" customClass="Cell" customModule="BindCollectionViews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-Bf-uaa">
+                                                    <rect key="frame" x="26" y="26" width="77" height="76"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="56"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="VwW-Bf-uaa" firstAttribute="centerX" secondItem="bhm-g1-wMS" secondAttribute="centerX" id="1h4-LI-1pi"/>
+                                            <constraint firstItem="VwW-Bf-uaa" firstAttribute="centerY" secondItem="bhm-g1-wMS" secondAttribute="centerY" id="P2k-k7-XWc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="VwW-Bf-uaa" id="hwf-uT-B4C"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="TWE-ei-cQB" customClass="Header" customModule="BindCollectionViews" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjE-9F-8zN">
+                                            <rect key="frame" x="20" y="13" width="335" height="24"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="OjE-9F-8zN" firstAttribute="leading" secondItem="TWE-ei-cQB" secondAttribute="leading" constant="20" symbolic="YES" id="5Zz-Ni-pYS"/>
+                                        <constraint firstItem="OjE-9F-8zN" firstAttribute="centerY" secondItem="TWE-ei-cQB" secondAttribute="centerY" id="X3o-hF-Xg8"/>
+                                        <constraint firstAttribute="trailing" secondItem="OjE-9F-8zN" secondAttribute="trailing" constant="20" symbolic="YES" id="n27-Gx-gIN"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="OjE-9F-8zN" id="7Yb-oN-3h6"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Naw-9P-Fgo" firstAttribute="top" secondItem="QlT-T7-UIf" secondAttribute="bottom" id="9uP-55-YTc"/>
+                            <constraint firstItem="QlT-T7-UIf" firstAttribute="top" secondItem="CyW-1i-B9X" secondAttribute="top" id="JKN-pD-9Na"/>
+                            <constraint firstAttribute="trailing" secondItem="QlT-T7-UIf" secondAttribute="trailing" id="RE7-RR-1gH"/>
+                            <constraint firstItem="QlT-T7-UIf" firstAttribute="leading" secondItem="CyW-1i-B9X" secondAttribute="leading" id="pEb-90-Uoh"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ch9-Dr-rSm" appends="YES" id="PMV-36-HLr"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="iED-At-0qb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BaY-Ug-pyc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBarButtonItem" destination="BaY-Ug-pyc" id="oZY-bP-fAo"/>
+                        <outlet property="collectionView" destination="QlT-T7-UIf" id="aOO-Yd-s5a"/>
+                        <outlet property="longPressGestureRecognizer" destination="ch9-Dr-rSm" id="NbN-RL-on8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ohq-Tg-scJ" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ch9-Dr-rSm"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="538.38080959520244"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yJp-rY-X4W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R6u-DC-pya" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bDn-qz-Q0a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kZe-ah-lvr" kind="relationship" relationship="rootViewController" id="PlD-d1-svd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7Z-gD-1bF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8" y="538.38080959520244"/>
+        </scene>
+    </scenes>
+</document>
