@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'RxSwiftPlayground' do
 pod 'RxSwift'
+pod 'RxCocoa'
 end
 
 post_install do |installer|

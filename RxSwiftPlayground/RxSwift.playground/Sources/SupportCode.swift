@@ -8,3 +8,7 @@ public func exampleOf(description: String, action: () -> Void) {
 public func delay(seconds: Double, action: @escaping () -> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: action)
 }
+
+public enum Error: Swift.Error {
+    case test
+}

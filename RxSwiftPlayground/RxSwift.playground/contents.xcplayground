@@ -9,5 +9,6 @@
         <page name='06. Perform Side Effects'/>
         <page name='07. Use Schedulers'/>
         <page name='08. Debugging'/>
+        <page name='09. Error Handling'/>
     </pages>
 </playground>
